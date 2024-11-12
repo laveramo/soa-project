@@ -10,8 +10,14 @@ public class VolunteersServicesApp {
 	public static short port=8090;
 	
 	public void StartService() {
-		String url = "http://"+host+":"+port+"/";
-		Endpoint.publish(url, new UserService());
+		String url1 = "http://" + host + ":" + port + "/DBConnection";
+        String url2 = "http://" + host + ":" + port + "/SignUp"; 
+        
+        Endpoint.publish(url1, new DBConnectionService());
+        System.out.println("DBConnectionService Started at " + url1);
+        
+        Endpoint.publish(url2, new SignUpService());
+        System.out.println("SignUpService Started at " + url2);;
 	}
 	
 	public static void main(String[] args) throws MalformedURLException {
