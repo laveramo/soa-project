@@ -1,4 +1,4 @@
-package fr.insa.soa.RestProject;
+package fr.insa.soa.Volunteers_rest;
 
 public class Link {
 	private String uri;

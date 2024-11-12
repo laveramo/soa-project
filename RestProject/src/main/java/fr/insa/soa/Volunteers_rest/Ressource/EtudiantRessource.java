@@ -1,6 +1,6 @@
-package fr.insa.soa.RestProject.Ressource;
+package fr.insa.soa.Volunteers_rest.Ressource;
 
-import fr.insa.soa.RestProject.Etudiant;
+import fr.insa.soa.Volunteers_rest.Etudiant;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
@@ -18,8 +18,8 @@ public class EtudiantRessource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Etudiant getEtudiant(@Context UriInfo uriInfo) {   // UriInfo est utilisée pour accéder aux informations des requétes
 		Etudiant etudiant=new Etudiant();
-		etudiant.setNom("N");
-		etudiant.setPrenom("G");
+		etudiant.setNom("Noussama");
+		etudiant.setPrenom("Geljid");
 		etudiant.setId(01);
 		etudiant.addLink(getUriforSelf(uriInfo,etudiant), "self", "GET");
 		etudiant.addLink(getUriforStage(uriInfo), "Stage", "GET");

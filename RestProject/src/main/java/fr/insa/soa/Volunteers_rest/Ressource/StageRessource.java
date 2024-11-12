@@ -1,6 +1,6 @@
-package fr.insa.soa.RestProject.Ressource;
+package fr.insa.soa.Volunteers_rest.Ressource;
 
-import fr.insa.soa.RestProject.Stage;
+import fr.insa.soa.Volunteers_rest.Stage;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;

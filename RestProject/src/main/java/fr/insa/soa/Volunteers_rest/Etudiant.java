@@ -1,4 +1,4 @@
-package fr.insa.soa.RestProject;
+package fr.insa.soa.Volunteers_rest;
 
 import java.util.ArrayList;
 

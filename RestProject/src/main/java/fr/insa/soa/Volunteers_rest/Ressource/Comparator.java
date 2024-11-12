@@ -1,4 +1,4 @@
-package fr.insa.soa.RestProject.Ressource;
+package fr.insa.soa.Volunteers_rest.Ressource;
 
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
